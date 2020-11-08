@@ -34,52 +34,70 @@
                
             </div>
              <ul class="items">
-                <li>HOME <i class="fas fa-angle-down"></i> </li>
-                <li>COVID-19 & EPA <i class="fas fa-angle-down"></i></li>
-                <li>MODALS <i class="fas fa-angle-down"></i> <div id="MODALS" class="modal-list" >
-                   
-                     <div class="modal-1">
-                        <ul>
-                        <li>HOME</li>
-                        <li>HOME</li>
-                        <li>HOME</li>
-                        <li>HOME</li>
-                        <li>HOME</li>
-                
-                
-                
-                
-                </ul></div>
-                    <div class="modal-2">
-                        <ul>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                    
-                    
-                    
-                    
-                    </ul>
-                    </div>
-                    <div class="modal-3">
-                        <ul>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                            <li>HOME</li>
-                    
-                    
-                    
-                    
-                    </ul>
-                    </div> 
+                <li><a href="#">HOME</a>  </li>
+                <li  id="modals">MODALS <i class="fas fa-angle-down"></i>
+                    <div  class="modal-list" >
+                        <div class="row-1 line">
+                            <div class="inner-row ">
+                                <div><h4>Wall Mounted</h4></div>
+                                
+                                <br>
+                                <div> 
+                                    <p> Sapphire</p>
+                                    <p> Diamond 8</p>
+                                    <p> Diamond 11</p>
+                                    <p> STO 3 in 11</p>
+                                    <p>KFTO 3 in 11</p>
+                                   
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="inner-row">
+                                <div><h4>Unsink</h4></div>
+                                <br>
+                                <div><ul>
+                                    <li> Sapphire</li>
+                                    <li> Diamond 8</li>
+                                    <li> Diamond 11</li>
+                                    <li> STO 3 in 11</li>
+                                    <li> KFTO 3 in 11</li>
+                                    
+                                </ul></div>
+                                
+                                
+                            </div>
+                            <div class="inner-row">
+                                <div><h4>Industrial</h4></div>
+                                
+                                
+                               
+                                </div>
+                       
+                        <div class="row-3 line">
+                            <img src="./images/logo.png" alt="">
+                        </div>
 
-                </div></li>
-                <li>SERVIES <i class="fas fa-angle-down"></i></li>
-                <li>ABOUT Us <i class="fas fa-angle-down"></i></li>
+        </div>
+               
+                </li>
+                <li>COVID-19 & EPA <i class="fas fa-angle-down"></i>
+                             <div  class="modal-list" >
+                                            <div class="row-1 line">
+                                                <img src="./images/bottle3.jpeg" alt="">
+                                            </div>
+                                            <div class="row-2 line ">
+                                                <h4>ACTIVE RESPONSE</h4>
+                                                <p>EPA N List Approved Medical Grade Hypochlorous Acid Kills 99.99% of viruses, bacteria and other microbes, including COVID-19</p>
+                                                
+                                            </div>
+                                            <div class="row-3 line">
+                                                <img src="./images/bottle.PNG" alt="">
+                                            </div>
+
+                            </div></li>
+                <li> <a href="#scroll-itmes">SERVIES</a>  </li>
+                <li><a href="#">ABOUT US</a> <i class="fas fa-angle-down"></i></li>
                 <li><div class="wrap">
                     <div class="search">
                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -207,7 +225,7 @@
         
         
             <div class=" colmn col-lg-6">
-             <img src="./images/tocs.PNG" alt="">
+             <img src="./images/tocs.PNG" alt="" id="active-response">
         
                
                 </div>
@@ -217,7 +235,7 @@
     </section>
 
 
-    <section class="our-items">
+    <section class="our-items" id="scroll-itmes">
         <h1>OUT ITEMS</h1>
         <div class="autoplay">
             <div><img src="./images/modal1.PNG" alt=""></div>
@@ -302,6 +320,50 @@
 ]
     
 });
+
+let imageArray = [ "bottle.PNG" , "bottle1.PNG" , "bottle2.jpeg" ,"bottle3.jpeg"];
+
+
+
+  let url  = $('#active-response');
+ 
+  let i=0;
+
+function   slide(){
+    let imageUrl =   "./images/" + imageArray[i];
+    url.attr("src" ,imageUrl);
+    if( i<(imageArray.length-1) )
+    {
+       
+              
+             
+                i++;    
+    }
+    else{
+        i=0;
+    }
+
+    setTimeout(slide, 2000);
+
+}
+
+  slide();         
+                            
+    
+ 
+
+
+
+
+    
+      
+    
+    
+    
+    
+    
+
+
     
     
     

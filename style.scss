@@ -2,7 +2,11 @@ $primary-color : #0098A7;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $primary-font-family: 'Open Sans', sans-serif;
 
+html{
+    scroll-behavior: smooth;
+}
 body{
+    
 
     overflow-x: hidden;
 
@@ -184,8 +188,108 @@ body{
                
                 
                 flex: 1;
-               
+                #modals {
+                    position: relative;
+                   
+                    .modal-list{
+                        display: none;
+                    }
+                  
+                  }
+                
+                #modals:hover>   .modal-list{
+                        
+                     
+                    position: absolute;
+                    width: 100vw;
+                    height: 30vh;
+                    
+                    z-index: 3;
+                    display:flex;
+                    top: 100%;
+                    left: -580%;
+                    background:white;
+                    -webkit-box-shadow: 0px 5px 6px 0px rgba(50, 50, 50, 0.49);
+                    -moz-box-shadow:    0px 5px 6px 0px rgba(50, 50, 50, 0.49);
+                    box-shadow:         0px 5px 6px 0px rgba(50, 50, 50, 0.49);
+                    overflow-x: hidden;
+                    border: 1px solid $primary-color;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
+                .line{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1% 4%;
+                    width: 100%;
+                    height: 100%;
+
+                    .inner-row{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                       
+                       
+                        
+                            text-align: center;
+                            margin: 0 5%;
+                            
+                            padding: 2% 0;
+                            border: 1px solid $primary-color;
+                            flex-direction: column;
+
+                            div{
+                            h4{
+                               
+                                font-size:18px;
+                                text-align: center;
+                               
+                                text-decoration: underline;
+                                width: 100%;
+                                height: 100%;
+                                
+                            }
+                        }
+
+                            ul {
+                                width: 100%;
+                                height: 100%;
+                                display:flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                               
+                                li{
+                                    text-align: center;
+                                    align-self: center;
+                                    width: 100%;
+                                    
+                                    
+                                  
+                                }
+                                
+                                   
+                                    
+                                    
+                                   
+                            
+
+                            }
+                            
+                            
+                        
+
+                    }
+                }
+                    
+                    }
+               
+               
 
                 li:nth-child(3) {
                     position: relative;
@@ -199,17 +303,44 @@ body{
                   li:nth-child(3):hover>   .modal-list{
                      
                     position: absolute;
-                    width: 99vw;
+                    width: 100vw;
                     height: 30vh;
                     z-index: 3;
                     display:flex;
-                    top: 96%;
-                    left: -420%;
+                    top: 105%;
+                    left: -450%;
                     background:white;
                     -webkit-box-shadow: 0px 5px 6px 0px rgba(50, 50, 50, 0.49);
                     -moz-box-shadow:    0px 5px 6px 0px rgba(50, 50, 50, 0.49);
                     box-shadow:         0px 5px 6px 0px rgba(50, 50, 50, 0.49);
                     overflow-x: hidden;
+                    border: 1px solid $primary-color;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .row-2{
+                        flex-direction: column;
+                        h4{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    
+                .line{
+                    width: 100%;
+                    height:100%;
+                   padding: 1%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   color: $primary-color;
+
+                    img{
+                        width:100%;
+                        height: 100%;
+                    }
+                }
                    
                    
                    
@@ -224,6 +355,10 @@ body{
                     color: $primary-color;
                     list-style: none;
                     font-weight: 300;font-size: 15px;
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
                     .wrap{
                         .search{
                             input{
@@ -249,8 +384,10 @@ body{
                 
                 }
                 li:hover{
-                    color: $primary-color;
+                    
                    transition: 0.5s;
+                   cursor: pointer;
+                   text-decoration-line: line-through;
                  
                    
 
@@ -435,7 +572,7 @@ body{
         align-items:center;
 
         .col-4{
-            margin: 0.5% 0.1%;
+            margin: 0.5% 2%;
             display:flex;
             flex-direction: column;
             justify-content:center;
