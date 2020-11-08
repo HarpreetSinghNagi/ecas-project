@@ -240,7 +240,7 @@ body{
                             margin: 0 5%;
                             
                             padding: 2% 0;
-                            border: 1px solid $primary-color;
+                           
                             flex-direction: column;
 
                             div{
@@ -263,11 +263,24 @@ body{
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-                               
+                               li:nth-child(1){
+                                   text-decoration: none;
+                                   font-weight: bold;
+                                   font-size:large;
+                               }
                                 li{
                                     text-align: center;
-                                    align-self: center;
+                                   
                                     width: 100%;
+                                    height: 100%;
+
+                                    
+                                    img{
+                                        margin-top: 20%;
+                                        width: 80%;
+                                        height: 50%;
+                                        
+                                    }
                                     
                                     
                                   
@@ -299,6 +312,63 @@ body{
                     }
                   
                   }
+
+                  li:nth-child(5) {
+                    position: relative;
+                   
+                    .modal-list{
+                        display: none;
+                    }
+                  
+                  }
+
+                  li:nth-child(5):hover>   .modal-list{
+                     
+                    position: absolute;
+                    width: 100vw;
+                    height: 30vh;
+                    z-index: 3;
+                    display:flex;
+                    top: 105%;
+                    left: -950%;
+                    background:white;
+                    -webkit-box-shadow: 0px 5px 6px 0px rgba(50, 50, 50, 0.49);
+                    -moz-box-shadow:    0px 5px 6px 0px rgba(50, 50, 50, 0.49);
+                    box-shadow:         0px 5px 6px 0px rgba(50, 50, 50, 0.49);
+                    overflow-x: hidden;
+                    border: 1px solid $primary-color;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .row-2{
+                        flex-direction: column;
+                        h4{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    
+                .line{
+                    width: 100%;
+                    height:100%;
+                   padding: 1%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   color: $primary-color;
+                   padding: 2% 8%;
+                   text-align: center;
+
+                    img{
+                        width:50%;
+                        height: 80%;
+                    }
+                }
+                   
+                   
+                   
+                }
 
                   li:nth-child(3):hover>   .modal-list{
                      
@@ -335,6 +405,7 @@ body{
                    justify-content: center;
                    align-items: center;
                    color: $primary-color;
+                   
 
                     img{
                         width:100%;
@@ -441,6 +512,43 @@ body{
    
     
     margin-top: 0.5%;
+
+
+    .carousel{
+       
+    .carousel-inner{
+        height: 70vh;
+        
+        
+        .active{
+
+            .d-none{
+                img{
+                    width: 10%;
+                    height:5%;
+                }
+                .container-fluid-button{
+                    width: 35%;
+                    height:6vh;
+                    display:inline-block;
+                    background:$primary-color;
+                    color: white;
+                    text-align: center;
+                    padding: 0.5% 0;
+                    font-weight: 500;
+                }
+                .container-fluid-button:hover{
+                    letter-spacing:1px;
+                    transition: 0.5s all ease-in;
+                }
+            }
+            img{
+                width: 100%;
+                height: 70vh;
+            }
+        }
+    }
+    }
 
     .container-fluid{
         width: 100%;
