@@ -21,6 +21,22 @@ body .top-container {
   z-index: 99;
 }
 
+body .top-container .mobile-view div {
+  display: none;
+}
+
+body .top-container .mobile-view div h4 {
+  display: none;
+}
+
+body .top-container .mobile-view div .hamburger {
+  display: none;
+}
+
+body .top-container .mobile-view div .hamburger i {
+  display: none;
+}
+
 body .top-container #top-navbar {
   padding: 2.5%;
   height: 10vh;

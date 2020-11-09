@@ -22,7 +22,20 @@ body{
      
         z-index: 99;
 
-        .mobile-view{}
+        .mobile-view{
+            div{
+                display :none;
+                h4{
+                    display :none;
+                }
+                .hamburger{
+                    display :none;
+                    i{
+                        display :none;
+                    }
+                }
+            }
+        }
 
         
       
